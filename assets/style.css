@@ -16,7 +16,7 @@ Text Domain: amar-institucional
   --r:22px; --shadow:0 14px 40px rgba(29,50,72,.10); --shadow-s:0 6px 18px rgba(29,50,72,.08);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:158px}
+html{scroll-behavior:smooth;scroll-padding-top:116px}
 body{margin:0;font-family:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
@@ -44,9 +44,9 @@ ul,ol{margin:0;padding:0;list-style:none}
 /* Header */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:box-shadow .2s,border-color .2s}
 .site-header.scrolled{border-color:var(--line);box-shadow:0 6px 24px rgba(29,50,72,.06)}
-.nav{display:flex;align-items:center;gap:22px;height:150px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:136px;width:auto}
+.nav{display:flex;align-items:center;gap:22px;height:100px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand img{display:block;height:auto;width:auto;max-height:64px;max-width:260px;object-fit:contain}
 .brand-text{display:flex;flex-direction:column;line-height:1}
 .brand-text strong{font-size:1.6rem;font-weight:900;letter-spacing:.04em;color:var(--blue)}
 .brand-text small{font-size:.72rem;font-weight:800;color:var(--muted);letter-spacing:.04em;margin-top:3px}
@@ -254,10 +254,10 @@ a.contact-item:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 @media(max-width:1100px){
   .cards{grid-template-columns:repeat(3,1fr)}
 }
-@media(max-width:1120px){
+@media(max-width:1400px){
   .js .burger{display:flex;margin-left:auto}
   .js .header-cta{display:none}
-  .js .menu{position:fixed;top:122px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;padding:14px 20px 22px;background:#fffdf9;border-bottom:1px solid var(--line);box-shadow:0 20px 30px rgba(29,50,72,.1);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.22s;margin:0}
+  .js .menu{position:fixed;top:100px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;padding:14px 20px 22px;background:#fffdf9;border-bottom:1px solid var(--line);box-shadow:0 20px 30px rgba(29,50,72,.1);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.22s;margin:0}
   .js .menu.open{transform:none;opacity:1;visibility:visible}
   .js .menu a:not(.btn){padding:13px 14px;font-size:1rem}
   .js .menu-cta{display:inline-flex;margin-top:8px}
@@ -308,7 +308,7 @@ a.contact-item:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 
 
 
-@media(max-width:480px){.nav{height:124px}.brand img{height:108px}.menu{top:124px}}
+@media(max-width:480px){.nav{height:80px}.brand img{max-height:48px;max-width:190px}.menu{top:80px}}
 
 /* Reputação Google: dados reais só aparecem após confirmação administrativa. */
 .amar-reviews{position:relative;overflow:hidden}

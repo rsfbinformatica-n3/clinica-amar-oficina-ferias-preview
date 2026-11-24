@@ -2,7 +2,7 @@
 
 Prévia estática de aprovação visual, exportada do staging privado da
 Clínica AMAR (`127.0.0.1:8093`, não publicamente acessível) em
-2026-11-24 (atualizada: correção de tamanho da logo no cabeçalho).
+2026-11-24 (atualizada: logo horizontal corrigida no cabeçalho).
 
 - **Apenas visual/estrutura.** Faixa etária, datas, horários, valores e
   programação da oficina ainda não foram confirmados pela coordenação.
